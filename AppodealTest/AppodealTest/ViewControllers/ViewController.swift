@@ -24,7 +24,7 @@ class ViewController: UIViewController {
         interstitialsConfigure()
         rewardedVideoConfigure()
         
-        view.backgroundColor = .green
+        view.backgroundColor = #colorLiteral(red: 0.3828683794, green: 0.3671541214, blue: 0.6710115075, alpha: 1)
         
     }
     
