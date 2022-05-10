@@ -1,0 +1,3 @@
+${PODS_ROOT}/Target Support Files/Pods-AppodealTest/Pods-AppodealTest-frameworks.sh
+${PODS_ROOT}/AmazonPublisherServicesSDK/APS_iOS_SDK-3.3.0/DTBiOSSDK.framework
+${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework

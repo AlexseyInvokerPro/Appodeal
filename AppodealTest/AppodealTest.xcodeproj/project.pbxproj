@@ -10,9 +10,13 @@
 		691579DE282AA9DC00500C0C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 691579DD282AA9DC00500C0C /* AppDelegate.swift */; };
 		691579E0282AA9DC00500C0C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 691579DF282AA9DC00500C0C /* SceneDelegate.swift */; };
 		691579E2282AA9DC00500C0C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 691579E1282AA9DC00500C0C /* ViewController.swift */; };
-		691579E5282AA9DC00500C0C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 691579E3282AA9DC00500C0C /* Main.storyboard */; };
 		691579E7282AA9DE00500C0C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 691579E6282AA9DE00500C0C /* Assets.xcassets */; };
 		691579EA282AA9DE00500C0C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 691579E8282AA9DE00500C0C /* LaunchScreen.storyboard */; };
+		691579F4282AAB7200500C0C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 691579F3282AAB7200500C0C /* Main.storyboard */; };
+		691579F6282AABF600500C0C /* NativeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 691579F5282AABF600500C0C /* NativeViewController.swift */; };
+		691579F9282AAC1A00500C0C /* NativeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 691579F8282AAC1A00500C0C /* NativeView.swift */; };
+		691579FB282AAC2200500C0C /* Native.xib in Resources */ = {isa = PBXBuildFile; fileRef = 691579FA282AAC2200500C0C /* Native.xib */; };
+		B400B44CA5BE71321B0C0691 /* Pods_AppodealTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F46816F2404085BBDDD3A39F /* Pods_AppodealTest.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,10 +24,16 @@
 		691579DD282AA9DC00500C0C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		691579DF282AA9DC00500C0C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		691579E1282AA9DC00500C0C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		691579E4282AA9DC00500C0C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		691579E6282AA9DE00500C0C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		691579E9282AA9DE00500C0C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		691579EB282AA9DE00500C0C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		691579F3282AAB7200500C0C /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		691579F5282AABF600500C0C /* NativeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NativeViewController.swift; sourceTree = "<group>"; };
+		691579F8282AAC1A00500C0C /* NativeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NativeView.swift; sourceTree = "<group>"; };
+		691579FA282AAC2200500C0C /* Native.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Native.xib; sourceTree = "<group>"; };
+		ACA266C77B4975C4F3384DD2 /* Pods-AppodealTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppodealTest.debug.xcconfig"; path = "Target Support Files/Pods-AppodealTest/Pods-AppodealTest.debug.xcconfig"; sourceTree = "<group>"; };
+		C860716C8DAC38D6E5737F5C /* Pods-AppodealTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppodealTest.release.xcconfig"; path = "Target Support Files/Pods-AppodealTest/Pods-AppodealTest.release.xcconfig"; sourceTree = "<group>"; };
+		F46816F2404085BBDDD3A39F /* Pods_AppodealTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppodealTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +41,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B400B44CA5BE71321B0C0691 /* Pods_AppodealTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3DF9E927637B51BF4A4FB0E1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F46816F2404085BBDDD3A39F /* Pods_AppodealTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5FD4486816055A26BF6CDF87 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				ACA266C77B4975C4F3384DD2 /* Pods-AppodealTest.debug.xcconfig */,
+				C860716C8DAC38D6E5737F5C /* Pods-AppodealTest.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		691579D1282AA9DC00500C0C = {
 			isa = PBXGroup;
 			children = (
 				691579DC282AA9DC00500C0C /* AppodealTest */,
 				691579DB282AA9DC00500C0C /* Products */,
+				5FD4486816055A26BF6CDF87 /* Pods */,
+				3DF9E927637B51BF4A4FB0E1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +86,42 @@
 		691579DC282AA9DC00500C0C /* AppodealTest */ = {
 			isa = PBXGroup;
 			children = (
-				691579DD282AA9DC00500C0C /* AppDelegate.swift */,
-				691579DF282AA9DC00500C0C /* SceneDelegate.swift */,
-				691579E1282AA9DC00500C0C /* ViewController.swift */,
-				691579E3282AA9DC00500C0C /* Main.storyboard */,
-				691579E6282AA9DE00500C0C /* Assets.xcassets */,
-				691579E8282AA9DE00500C0C /* LaunchScreen.storyboard */,
+				691579F1282AAAB600500C0C /* Supporting files */,
+				691579F2282AAAF600500C0C /* ViewControllers */,
+				691579F7282AAC0800500C0C /* Native */,
 				691579EB282AA9DE00500C0C /* Info.plist */,
 			);
 			path = AppodealTest;
+			sourceTree = "<group>";
+		};
+		691579F1282AAAB600500C0C /* Supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				691579DD282AA9DC00500C0C /* AppDelegate.swift */,
+				691579DF282AA9DC00500C0C /* SceneDelegate.swift */,
+				691579E6282AA9DE00500C0C /* Assets.xcassets */,
+				691579E8282AA9DE00500C0C /* LaunchScreen.storyboard */,
+				691579F3282AAB7200500C0C /* Main.storyboard */,
+			);
+			path = "Supporting files";
+			sourceTree = "<group>";
+		};
+		691579F2282AAAF600500C0C /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				691579E1282AA9DC00500C0C /* ViewController.swift */,
+				691579F5282AABF600500C0C /* NativeViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		691579F7282AAC0800500C0C /* Native */ = {
+			isa = PBXGroup;
+			children = (
+				691579F8282AAC1A00500C0C /* NativeView.swift */,
+				691579FA282AAC2200500C0C /* Native.xib */,
+			);
+			path = Native;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +131,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 691579EE282AA9DE00500C0C /* Build configuration list for PBXNativeTarget "AppodealTest" */;
 			buildPhases = (
+				96CD11568FABB7DE87EA8456 /* [CP] Check Pods Manifest.lock */,
 				691579D6282AA9DC00500C0C /* Sources */,
 				691579D7282AA9DC00500C0C /* Frameworks */,
 				691579D8282AA9DC00500C0C /* Resources */,
+				CA274B0F9716DFC611E86C4F /* [CP] Embed Pods Frameworks */,
+				ACE873F22503206A5F9C5791 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -125,13 +185,73 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				691579F4282AAB7200500C0C /* Main.storyboard in Resources */,
 				691579EA282AA9DE00500C0C /* LaunchScreen.storyboard in Resources */,
+				691579FB282AAC2200500C0C /* Native.xib in Resources */,
 				691579E7282AA9DE00500C0C /* Assets.xcassets in Resources */,
-				691579E5282AA9DC00500C0C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		96CD11568FABB7DE87EA8456 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AppodealTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ACE873F22503206A5F9C5791 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AppodealTest/Pods-AppodealTest-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AppodealTest/Pods-AppodealTest-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AppodealTest/Pods-AppodealTest-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CA274B0F9716DFC611E86C4F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AppodealTest/Pods-AppodealTest-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AppodealTest/Pods-AppodealTest-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AppodealTest/Pods-AppodealTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		691579D6282AA9DC00500C0C /* Sources */ = {
@@ -139,22 +259,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				691579E2282AA9DC00500C0C /* ViewController.swift in Sources */,
+				691579F9282AAC1A00500C0C /* NativeView.swift in Sources */,
 				691579DE282AA9DC00500C0C /* AppDelegate.swift in Sources */,
 				691579E0282AA9DC00500C0C /* SceneDelegate.swift in Sources */,
+				691579F6282AABF600500C0C /* NativeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		691579E3282AA9DC00500C0C /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				691579E4282AA9DC00500C0C /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		691579E8282AA9DE00500C0C /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -284,6 +398,7 @@
 		};
 		691579EF282AA9DE00500C0C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ACA266C77B4975C4F3384DD2 /* Pods-AppodealTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -312,6 +427,7 @@
 		};
 		691579F0282AA9DE00500C0C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C860716C8DAC38D6E5737F5C /* Pods-AppodealTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
